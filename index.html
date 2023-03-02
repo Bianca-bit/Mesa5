@@ -6,15 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Aula 5 - Modificar elementos com JS </title>
+  <link rel="stylesheet" href="switch.css">
+  <title>Aula 6</title>
 </head>
 
 <body class="dark">
 
-  <h1>A família dos felinos</h1>
-  <button onclick="acionou()"><h1>Botão</h1></button>
-
   <div class="container">
+    <h1>A família dos felinos</h1>
+    
+    <!-- Exemplo de switch, retiado do W3Schools 
+      -> https://www.w3schools.com/howto/howto_css_switch.asp
+    -->
+    <label class="switch">
+      <!-- OnChnaged -> Fica obervando 'mudanças' no comportamento do input -->
+      <input id="toggleSwitch" type="checkbox" onchange="alteraTemaComToggle()">
+      <span class="slider"></span>
+    </label>
+
+  </div>
+
+  <div id="containerFelinos" class="container">
+
     <div class="item">
       <img src="./imagens/tiger.jpg">
       <h2>O tigre</h2>
@@ -25,6 +38,7 @@
         é a maior espécie de felino do mundo junto com o leão.
       </p>
     </div>
+    
     <div class="item">
       <img src="./imagens/leon.jpg">
       <h2>O leão</h2>
@@ -77,9 +91,9 @@
         do mundo, atingindo uma velocidade máxima de 115 km/h em corridas de até quinhentos metros.
       </p>
     </div>
-  </div>
-  <script src = "./script_aula5.js"></script>
 
+  </div>
+  <script src="script_aula5.js"></script>
 </body>
 
 </html>
