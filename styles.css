@@ -52,25 +52,37 @@ h1 {
 
 /* A cor de fundo  */
 
-.bodydark{
-  background-color: rgb(39, 39, 39);
-}
+
 
 /* Modificações no titulo 'A família dos felinos' */
-.darkmode1{ 
+
+
+
+
+.darkmode2{ 
+  background-color: rgb(19, 19, 19);
+  color: rgb(170, 170, 170);
+  border-color: black;
+}
+
+.darkmode1{
+  background-color: rgb(29, 39, 39);
+}
+.darkmode2{ 
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
 }
 
 
+
 /* Modificações nos items */
-.darkmode2{
+.darkmode3{
   background-color: rgb(19, 19, 19);
   border-color: black;
 }
 
 /* Modificações nos textos dos itens e cabeçalhos dos itens */
-.darkmode3{
+.darkmode4{
   color: rgb(230, 230, 230);
 }

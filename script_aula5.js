@@ -25,16 +25,21 @@
    
 }*/
 
-let body = document.querySelector("body");
-         
-let h1 = document.querySelector("h1");
+//let body = document.querySelector("body");
 
-let cards = document.querySelectorAll(".item")
+
+
 
 function alteraTemaComToggle(){
-    body.classList.toggle("bodydark");
-    h1.classList.toggle("darkmode1");
 
+    
+    let body = document.querySelector("body");
+    let h1 = document.querySelector("h1");
+    let cards = document.querySelectorAll(".item");
+    
+    body.classList.toggle("darkmode1");
+    h1.classList.toggle("darkmode2");
+    
     for(let card of cards){
         card.classList.toggle("darkmode2");
         card.classList.toggle("darkmode3");
